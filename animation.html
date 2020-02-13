@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .animation-area {
+        width: 500px;
+        height: 500px;
+        background-color: blue;
+        animation: thisIsmyKeyFrame 5s linear infinite alternate;
+      }
+
+      @keyframes thisIsmyKeyFrame {
+        from {
+          background-color: blue;
+        }
+        to {
+          background-color: green;
+          border-radius: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display:flexbox; flex-direction: row; justify-content: center;">
+      <div class="animation-area"></div>
+    </div>
+  </body>
+</html>

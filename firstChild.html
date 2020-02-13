@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <style>
+      div p:first-child {
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>I will be targeted</p>
+      <p>But I will not</p>
+    </div>
+
+    <div>
+      <div>Not a p tag so i won't be targeted</div>
+      <p>I'm not the first child so i have no style</p>
+      <p>Same here</p>
+    </div>
+  </body>
+</html>
