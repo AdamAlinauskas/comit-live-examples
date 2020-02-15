@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box-row {
+      width: 100px;
+      height: 100px;
+      border: 1px black dashed;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; /* Horizontal left to right*/
+      align-items: flex-end; /* Vertical up and down */
+    }
+
+    .box-column {
+      width: 100px;
+      height: 100px;
+      border: 1px black dashed;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; /* Vertical up and down */
+      align-items: center; /* Horizontal left to right*/
+    }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    article {
+      height: 200px;
+      width: 200px;
+      background-color: pink;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      flex: 200px;
+    }
+  </style>
+  <body>
+    <header><h1>Our website</h1></header>
+
+    <div class="main-content">
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+    </div>
+
+    <!-- <div class="box-row">row text</div>
+    <div class="box-column">column text</div> -->
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 100px;
+      }
+      div {
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+        transform: rotate(30deg);
+        box-shadow: 1px 10px 10px #999999;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 33, 121, 1) 21%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        animation: thisIsmyKeyFrame 5s linear infinite alternate;
+      }
+
+      @keyframes thisIsmyKeyFrame {
+        from {
+          transform: rotate(30deg);
+        }
+        to {
+          transform: rotate(180deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
